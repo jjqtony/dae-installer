@@ -132,16 +132,16 @@ get_download_urls() {
         geoip_url="https://cdn.jsdelivr.net/gh/v2rayA/dist-v2ray-rules-dat/geoip.dat"
         geosite_url="https://cdn.jsdelivr.net/gh/v2rayA/dist-v2ray-rules-dat/geosite.dat"
     else
-        systemd_service_url="https://github.com/daeuniverse/dae/raw/$latest_version/install/dae.service"
-        openrc_service_url="https://github.com/daeuniverse/dae-installer/raw/main/OpenRC/dae"
-        dae_url="https://github.com/daeuniverse/dae/releases/download/$latest_version/dae-linux-$MACHINE.zip"
-        dae_hash_url="https://github.com/daeuniverse/dae/releases/download/$latest_version/dae-linux-$MACHINE.zip.dgst"
-        example_config_url="https://github.com/daeuniverse/dae/raw/$latest_version/example.dae"
-        bash_completion_url="https://github.com/daeuniverse/dae/raw/$latest_version/install/shell-completion/dae.bash"
-        zsh_completion_url="https://github.com/daeuniverse/dae/raw/$latest_version/install/shell-completion/dae.zsh"
-        fish_completion_url="https://github.com/daeuniverse/dae/raw/$latest_version/install/shell-completion/dae.fish"
-        geoip_url="https://github.com/v2rayA/dist-v2ray-rules-dat/raw/master/geoip.dat"
-        geosite_url="https://github.com/v2rayA/dist-v2ray-rules-dat/raw/master/geosite.dat"
+        systemd_service_url="https://p8.88332211.xyz/https://github.com/daeuniverse/dae/raw/$latest_version/install/dae.service"
+        openrc_service_url="https://p8.88332211.xyz/https://github.com/daeuniverse/dae-installer/raw/main/OpenRC/dae"
+        dae_url="https://p8.88332211.xyz/https://github.com/daeuniverse/dae/releases/download/$latest_version/dae-linux-$MACHINE.zip"
+        dae_hash_url="https://p8.88332211.xyz/https://github.com/daeuniverse/dae/releases/download/$latest_version/dae-linux-$MACHINE.zip.dgst"
+        example_config_url="https://p8.88332211.xyz/https://github.com/daeuniverse/dae/raw/$latest_version/example.dae"
+        bash_completion_url="https://p8.88332211.xyz/https://github.com/daeuniverse/dae/raw/$latest_version/install/shell-completion/dae.bash"
+        zsh_completion_url="https://p8.88332211.xyz/https://github.com/daeuniverse/dae/raw/$latest_version/install/shell-completion/dae.zsh"
+        fish_completion_url="https://p8.88332211.xyz/https://github.com/daeuniverse/dae/raw/$latest_version/install/shell-completion/dae.fish"
+        geoip_url="https://p8.88332211.xyz/https://github.com/v2rayA/dist-v2ray-rules-dat/raw/master/geoip.dat"
+        geosite_url="https://p8.88332211.xyz/https://github.com/v2rayA/dist-v2ray-rules-dat/raw/master/geosite.dat"
     fi
 }
 
@@ -221,7 +221,7 @@ check_online_version() {
         if [ "$use_cdn" = 'yes' ]; then
             tags_url="https://github.abskoop.workers.dev/https://github.com/daeuniverse/dae/tags"
         else
-            tags_url="https://github.com/daeuniverse/dae/tags"
+            tags_url="https://p8.88332211.xyz/https://github.com/daeuniverse/dae/tags"
         fi
         temp_file="$(mktemp /tmp/dae.XXXXXX)"
         if ! curl -s "$tags_url" -o "$temp_file"; then
@@ -236,7 +236,7 @@ check_online_version() {
         if [ "$use_cdn" = 'yes' ]; then
             releases_url="https://github.abskoop.workers.dev/https://github.com/daeuniverse/dae/releases/latest"
         else
-            releases_url="https://github.com/daeuniverse/dae/releases/latest"
+            releases_url="https://p8.88332211.xyz/https://github.com/daeuniverse/dae/releases/latest"
         fi
         temp_file="$(mktemp /tmp/dae.XXXXXX)"
         if ! curl -sL "$releases_url" | \
